@@ -1,7 +1,7 @@
 <?php
 namespace Rigo\Controller;
 
-use Rigo\Types\Course;
+use Rigo\Types\User;
 
 class SampleController{
     
@@ -10,11 +10,11 @@ class SampleController{
             'name' => 'Rigoberto'
         ];
     }
-    
-    public function getDraftCourses(){
-        $query = Course::all([ 'status' => 'draft' ]);
+
+    public function getDraftUser(){
+        $query = User::all([ 'status' => 'draft' ]);
         return $query->posts;
-    }
     
+}
 }
 ?>
