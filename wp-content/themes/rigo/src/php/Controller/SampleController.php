@@ -11,10 +11,13 @@ class SampleController{
         ];
     }
 
-    public function getDraftUser(){
+   public function getDraftUser(){
         $query = User::all([ 'status' => 'draft' ]);
-        return $query->posts;
-    
-}
+        $lst = [];
+        forEach($query->posts as $user) {
+            $lst[] = User::serialize($user);
+        }
+        return $lst;
+    }    
 }
 ?>
