@@ -16,6 +16,7 @@ $args = wpas_get_view_data();
         <p>Here are some useful links:</p>
         <ul>
             <li><a href="<?php echo get_site_url(); ?>/wp-admin">Login into the WordPress admin dashboard.</a></li>
+             <li>This is a endpoint: GET: <a href="<?php echo get_site_url(); ?>/wp-json/sample_api/v1/courses">/courses</a></li>
             <li>This is a endpoint: GET: <a href="<?php echo get_site_url(); ?>/wp-json/sample_api/v1/user">/user</a></li>
             <li>You can download the <a href="https://www.getpostman.com/apps">postman client here.</a></li>
         </ul>
